@@ -1,0 +1,7 @@
+<h1><%= @geneticist.name %></h1>
+<h2><%= @geneticist.education %></h2>
+<img src='<%= @geneticist.image %>', alt='geneticist image'>
+<h3><%= @geneticist.biography %></h3>
+
+<h4><%= link_to 'Modify Geneticist Information', edit_geneticist_path(@geneticist) %></h4>
+<h4><%= link_to 'Scrub Geneticist Information', geneticist_path(@geneticist), method: :delete %></h4>

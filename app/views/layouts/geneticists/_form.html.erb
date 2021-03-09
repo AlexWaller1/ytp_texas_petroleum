@@ -1,0 +1,18 @@
+<%= form_for(@genticist) do |g| %>
+<%= g.hidden_field :user_id, value: @geneticist.user.id %>
+
+<%= g.label :name, 'Name' %><br>
+<%= g.text_field :name %><br>
+
+<%= g.label :image, 'Image' %><br>
+<%= g.text_field :image %><br>
+
+<%= g.label :education, 'Education' %><br>
+<%= g.text_field :education %><br>
+
+<%= g.label :biography, 'Biography' %><br>
+<%= g.text_area :biography %><br>
+
+<%= g.submit %><br>
+
+<% end %>

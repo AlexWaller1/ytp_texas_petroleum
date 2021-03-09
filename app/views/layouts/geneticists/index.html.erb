@@ -1,0 +1,7 @@
+<h1> Geneticists </h1>
+
+<% @geneticists.each do |g| %>
+<h2><%= link_to g.name, geneticist_path(g) %></h2>
+<h3><%= g.education %></h3>
+<img src='<%= g.image %>', alt='Geneticist Information'>
+<% end %>
