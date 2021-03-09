@@ -1,0 +1,14 @@
+<h1> Welcome Back To YTP Petroleum, Please Sign In </h1>
+
+<%= form_for :user, url: login_path do |f| %>
+  <div>
+  <%= f.label :username, 'Username' %><br>
+  <%= f.text_field :username %><br>
+  </div>
+  <div>
+  <%= f.label :password, 'Password' %><br>
+  <%= f.password_field :password %><br>
+  </div>
+  <%= f.submit %>
+
+  <% end %>

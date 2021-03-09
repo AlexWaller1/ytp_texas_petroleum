@@ -1,0 +1,16 @@
+<h1> Register With YTP Petroleum </h1>
+
+<h3><%= @error %></h3>
+
+<%= form_for @user, url: signup_path, method: :post do |f| %>
+    <div>
+    <%= f.label :username, "Username" %><br>
+    <%= f.text_field :username %><br>
+       </div>
+       <div>
+    <%= f.label :password, "Password" %><br>
+    <%= f.password_field :password %><br>
+       </div>
+    <%= f.submit "Signup" %>
+
+    <% end %>
