@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
             @error = "I'm sorry, that username is not on file."
             render :new
         elsif !@user.authenticate(user_params[:password])
-            @error = "I'm sorry, that username is not on file."
+            @error = "I'm sorry, that password is not on file."
             render :new
         else
             session[:user_id] = @user.id
